@@ -25,3 +25,9 @@
   div.row.col-sm-6.col-md-12{
       align-content: center;
   }
+
+  @media (max-width: 180px) {
+    .nav.navbar-nav.navbar-right .dropdown {
+      visibility: hidden;
+    }
+  }
