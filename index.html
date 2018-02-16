@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Lattitude -- HTML and CSS Homework</title>
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Lattitude</a>
+                <a class="navbar-brand" href="index.html"><strong>Lattitude</strong></a>
                 </div>
         
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -31,7 +32,7 @@
         
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle-active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="temperature.html">Max Temperature</a></li>
                         <li><a href="humidity.html">Humidity</a></li>
@@ -48,26 +49,28 @@
             </div>
             <!-- /.container-fluid -->
     </nav>
-    <div class="container">
+    <div class="container-fluid">
 
         <!-- Row 1 -->
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-6 col-md-12">
             <h1>Summary: Latitude vs X</h1>
-            <img src="file:///Users/owen/Desktop/HTMLStuff/homework12_Lattitude/images/LatitudevsTemperature.jpg" width="50%" alt="Latitude.Temperature">
+            <img src="file:///Users/owen/Desktop/HTMLStuff/homework12_Lattitude/images/LatitudevsTemperature.png" width="100%" alt="Latitude versus Temperature">
+            <p>This project aimed to investigate city weather observations provided by the OpenWeatherMap API, with the looming question of "how does weather change as you approach the equator?"</p>
+            <p>To assess this question, we sampled over 500 cities and assembled the data before finally utilizing Matplotlib to visualize various comparisons.</p>
+            <p>Factors investigated included: temperature, cloudiness, wind speed, and humidity. Charts for these different observations can be found on this site, along with the source data used for these visualizations.</p>
             </div>
         </div>
-    
+
         <!-- Row 2 -->
         <div class="row">
             <div class="col-sm-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt optio provident tempora amet, eveniet et, eum illum, culpa laborum dicta recusandae magni architecto. Illo saepe facilis, unde. Debitis, atque, doloremque?</p>
-            </div>
-            <div class="col-sm-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolorum perferendis voluptates error ullam placeat repellendus. Repellendus error repellat veritatis recusandae voluptates earum rerum consectetur itaque, ipsam nihil. Alias, nemo.</p>
-            </div>
-            <div class="col-sm-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ratione sint ex porro excepturi non dolorum, ullam ea quae vel earum, soluta obcaecati natus. Eligendi iusto accusantium mollitia debitis assumenda!</p>
+            <ul>
+                <li><a href="temperature.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="windspeed.html">Wind Speed</a></li>
+            </ul>
             </div>
         </div>
     </div>
